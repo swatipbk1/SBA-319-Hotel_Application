@@ -32,3 +32,6 @@ const personSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    address: {
+        type: String
+    },
