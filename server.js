@@ -15,3 +15,7 @@ app.use((req, res, next) => {
     console.log('Request body:', req.body);
     next();
 });
+
+app.get('/', function (req, res) {
+    res.send('Welcome to our Hotel');
+})
