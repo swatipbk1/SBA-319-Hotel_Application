@@ -23,15 +23,6 @@ const personSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    mobile: {
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true,
-        unique: true
-    },
     address: {
         type: String
     },
@@ -48,3 +39,6 @@ const personSchema = new mongoose.Schema({
         type: String
     }
 });
+
+// Create a Mongoose model for Person
+module.exports = mongoose.model('Person', personSchema, 'people');
