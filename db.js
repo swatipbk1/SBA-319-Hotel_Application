@@ -11,3 +11,8 @@ mongoose.connect(mongoURL, {
 });
 // Get the default connection
 const db = mongoose.connection;
+
+// Define event listeners for database connection
+db.on('connected', () => {
+    console.log('Connected to MongoDB server');
+});
