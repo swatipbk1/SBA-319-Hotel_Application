@@ -9,3 +9,5 @@ mongoose.connect(mongoURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+// Get the default connection
+const db = mongoose.connection;
