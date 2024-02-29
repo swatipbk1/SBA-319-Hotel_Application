@@ -19,3 +19,8 @@ app.use((req, res, next) => {
 app.get('/', function (req, res) {
     res.send('Welcome to our Hotel');
 })
+
+// Use the routers
+app.use('/api', personRoutes);
+app.use('/menu', menuItemRoutes);
+app.use('/serial', invoiceRoutes);
