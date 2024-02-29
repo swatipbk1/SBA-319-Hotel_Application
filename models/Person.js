@@ -6,3 +6,11 @@ const personSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    age: {
+        type: Number
+    },
+    work: {
+        type: String,
+        enum: ['chef', 'waiter', 'manager'],
+        required: true
+    },
