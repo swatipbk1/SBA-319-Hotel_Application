@@ -24,3 +24,9 @@ app.get('/', function (req, res) {
 app.use('/api', personRoutes);
 app.use('/menu', menuItemRoutes);
 app.use('/serial', invoiceRoutes);
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something broke!');
+});
