@@ -35,3 +35,7 @@ const personSchema = new mongoose.Schema({
     address: {
         type: String
     },
+    salary: {
+        type: Number,
+        required: true
+    },
