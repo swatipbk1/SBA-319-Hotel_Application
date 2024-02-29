@@ -7,3 +7,11 @@ const invoiceRoutes = require('./routes/invoiceRoutes');
 
 const app = express();
 app.use(express.json());
+
+
+// Log incoming requests
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    console.log('Request body:', req.body);
+    next();
+});
