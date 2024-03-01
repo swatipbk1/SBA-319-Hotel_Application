@@ -41,3 +41,7 @@ router.get('/:taste', async (req, res) =>{
         res.status(500).json({error: 'Internal Server Error'});
     }
 })
+router.put('/:id', async (req, res)=>{
+    try{
+        const menuId = req.params.id; // Extract the id of Menu Item from the URL parameter
+        const updatedMenuData = req.body; // Updated data for the Menu Item
