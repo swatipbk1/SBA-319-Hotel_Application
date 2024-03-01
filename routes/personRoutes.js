@@ -12,3 +12,12 @@ router.post('/persons', async (req, res) => {
         res.status(400).json({ message: error.message });
     }
 });
+// Get all people
+router.get('/persons', async (req, res) => {
+    try {
+        const people = await Person.find();
+        res.json(people);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
