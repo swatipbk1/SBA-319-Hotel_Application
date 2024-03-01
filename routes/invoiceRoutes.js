@@ -8,3 +8,8 @@ router.post('/invoices', async (req, res) => {
       const newInvoice = new Invoice(invoiceData);
       const savedInvoice = await newInvoice.save();
       res.status(201).json(savedInvoice);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Internal Server Error' });
+      }
+    });
