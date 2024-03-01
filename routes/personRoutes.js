@@ -49,3 +49,6 @@ router.patch('/persons/:id', async (req, res) => {
         res.status(400).json({ message: error.message });
     }
 });
+// Delete a person
+router.delete('/persons/:id', async (req, res) => {
+    const { id } = req.params;
