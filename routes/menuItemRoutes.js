@@ -31,3 +31,8 @@ router.get('/:taste', async (req, res) =>{
         const tasteType = req.params.taste; // // Extract the taste type from the URL parameter
         if(tasteType == 'sweet' || tasteType == 'sour' || tasteType == 'spicy' ){
             const response = await MenuItem.find({taste: tasteType});
+            console.log('response fetched');
+            res.status(200).json(response);
+        }else{
+            res.status(404).json({error: 'Invalid Taste type'});
+        }
