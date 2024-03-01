@@ -49,3 +49,14 @@ router.put('/:id', async (req, res)=>{
             new: true, // Return the updated document
             runValidators: true, // Run Mongoose validation
         })
+        if (!response) {
+            return res.status(404).json({ error: 'Menu Item not found' });
+        }
+
+        console.log('data updated');
+        res.status(200).json(response);
+    }catch(err){
+        console.log(err);
+        res.status(500).json({error: 'Internal Server Error'});
+    }
+})
