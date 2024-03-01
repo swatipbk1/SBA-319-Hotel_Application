@@ -39,3 +39,13 @@ router.put('/persons/:id', async (req, res) => {
 router.patch('/persons/:id', async (req, res) => {
     const { id } = req.params;
     const newData = req.body;
+    try {
+        const updatedPerson = await Person.findByIdAndUpdate(id, newData, { new: true });
+        if (!updatedPerson) {
+            return res.status(404).json({ message: 'Person not found' });
+        }
+        res.json(updatedPerson);
+    } catch (error) {
+        res.status(400).json({ message: error.message });
+    }
+});
