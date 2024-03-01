@@ -45,3 +45,7 @@ router.put('/:id', async (req, res)=>{
     try{
         const menuId = req.params.id; // Extract the id of Menu Item from the URL parameter
         const updatedMenuData = req.body; // Updated data for the Menu Item
+        const response = await MenuItem.findByIdAndUpdate(menuId, updatedMenuData, {
+            new: true, // Return the updated document
+            runValidators: true, // Run Mongoose validation
+        })
