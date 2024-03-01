@@ -23,3 +23,10 @@ router.get('/invoices', async (req, res) => {
       res.status(500).json({ error: 'Internal Server Error' });
     }
   });
+  // Get a single invoice by ID
+router.get('/invoices/:id', async (req, res) => {
+    try {
+      const invoice = await Invoice.findById(req.params.id);
+      if (!invoice) {
+        return res.status(404).json({ error: 'Invoice not found' });
+      }
