@@ -26,3 +26,8 @@ router.get('/', async (req, res) =>{
         res.status(500).json({error: 'Internal Server Error'});
     }
 })
+router.get('/:taste', async (req, res) =>{
+    try{
+        const tasteType = req.params.taste; // // Extract the taste type from the URL parameter
+        if(tasteType == 'sweet' || tasteType == 'sour' || tasteType == 'spicy' ){
+            const response = await MenuItem.find({taste: tasteType});
