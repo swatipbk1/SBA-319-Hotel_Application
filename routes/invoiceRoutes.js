@@ -43,3 +43,9 @@ router.put('/invoices/:id', async (req, res) => {
         if (!updatedInvoice) {
           return res.status(404).json({ error: 'Invoice not found' });
         }
+        res.status(200).json(updatedInvoice);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
