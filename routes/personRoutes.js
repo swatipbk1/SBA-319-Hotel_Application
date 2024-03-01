@@ -35,3 +35,7 @@ router.put('/persons/:id', async (req, res) => {
         res.status(400).json({ message: error.message });
     }
 });
+// Update a person partially
+router.patch('/persons/:id', async (req, res) => {
+    const { id } = req.params;
+    const newData = req.body;
