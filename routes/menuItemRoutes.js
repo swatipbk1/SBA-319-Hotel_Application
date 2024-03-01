@@ -36,3 +36,8 @@ router.get('/:taste', async (req, res) =>{
         }else{
             res.status(404).json({error: 'Invalid Taste type'});
         }
+    }catch(err){
+        console.log(err);
+        res.status(500).json({error: 'Internal Server Error'});
+    }
+})
