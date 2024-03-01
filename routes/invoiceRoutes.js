@@ -17,3 +17,9 @@ router.post('/invoices', async (req, res) => {
 router.get('/invoices', async (req, res) => {
     try {
       const invoices = await Invoice.find();
+      res.status(200).json(invoices);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    }
+  });
