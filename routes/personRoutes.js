@@ -52,3 +52,14 @@ router.patch('/persons/:id', async (req, res) => {
 // Delete a person
 router.delete('/persons/:id', async (req, res) => {
     const { id } = req.params;
+
+    try {
+        const deletedPerson = await Person.findByIdAndDelete(id);
+        if (!deletedPerson) {
+            return res.status(404).json({ message: 'Person not found' });
+        }
+        res.json({ message: 'Person deleted' });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
