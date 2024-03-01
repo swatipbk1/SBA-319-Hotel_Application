@@ -49,3 +49,10 @@ router.put('/invoices/:id', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+// Delete an existing invoice by ID
+router.delete('/invoices/:id', async (req, res) => {
+    try {
+      const deletedInvoice = await Invoice.findByIdAndDelete(req.params.id);
+      if (!deletedInvoice) {
+        return res.status(404).json({ error: 'Invoice not found' });
+      }
