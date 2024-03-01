@@ -56,3 +56,11 @@ router.delete('/invoices/:id', async (req, res) => {
       if (!deletedInvoice) {
         return res.status(404).json({ error: 'Invoice not found' });
       }
+      res.status(200).json({ message: 'Invoice deleted successfully' });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    }
+  });
+  
+  module.exports = router;
