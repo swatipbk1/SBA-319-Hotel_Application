@@ -21,3 +21,7 @@ router.get('/persons', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
+// Update a person
+router.put('/persons/:id', async (req, res) => {
+    const { id } = req.params;
+    const newData = req.body;
