@@ -36,3 +36,6 @@ router.get('/invoices/:id', async (req, res) => {
       res.status(500).json({ error: 'Internal Server Error' });
     }
   });
+  // Update an existing invoice by ID
+router.put('/invoices/:id', async (req, res) => {
+    try {
