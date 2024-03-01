@@ -15,3 +15,6 @@ router.post('/', async (req, res) =>{
         res.status(500).json({error: 'Internal Server Error'});
     }
 })
+// GET method to get the Menu Items
+router.get('/', async (req, res) =>{
+    try{
