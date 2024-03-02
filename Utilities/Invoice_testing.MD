@@ -15,3 +15,8 @@ Create an Invoice (POST):
 Use the URL http://localhost:3000/serial/invoices/ Headers: Content-Type: application/json Request Body Example: { "guestId": "611fe1e22ac1a80021b02d42", "items": [ { "name": "Room Service Breakfast", "description": "Continental breakfast", "quantity": 1, "price": 15.99 }, { "name": "Laundry Service", "description": "Washing and ironing", "quantity": 2, "price": 10.50 } ], "totalAmount": 37.99, "status": "pending" } Instructions: Set the request method to POST. Use the URL /invoices. Set the Content-Type header to application/json. Include the invoice details in the request body as shown in the example.
 
 Get All Invoices (GET):
+URL: /invoices Instructions: Set the request method to GET. Use the URL http://localhost:3000/serial/invoices/ No additional parameters or headers needed.
+
+Update an Invoice by ID (PUT):
+
+URL: http://localhost:3000/serial/invoices/:id(object_id) Headers: Content-Type: application/json Request Body Example: { "guestId": "611fe1e22ac1a80021b02d49", "items": [ { "name": "Room Service Breakfast", "description": "Continental breakfast", "quantity": 1, "price": 15.99 }, { "name": "Laundry Service", "description": "Washing and ironing", "quantity": 2, "price": 10.50 } ], "totalAmount": 37.99, "status": "paid" // Updated status to "paid" } Instructions: Set the request method to PUT. Use the URL http://localhost:3000/serial/invoices/:id(object_id) Set the Content-Type header to application/json. Include the updated invoice details in the request body as shown in the example.
