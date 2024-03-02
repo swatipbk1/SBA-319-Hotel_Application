@@ -42,3 +42,10 @@ createdAt: {
     default: Date.now
   }
 });
+// Define indexes
+invoiceSchema.index({ guestId: 1 }); // Index for guestId field
+invoiceSchema.index({ status: 1 }); // Index for status field
+
+const Invoice = mongoose.model('Invoice', invoiceSchema);
+
+module.exports = Invoice;
