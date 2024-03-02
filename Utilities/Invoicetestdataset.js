@@ -33,3 +33,24 @@ const invoices = [
             "quantity": 1,
             "price": 50.00
           }
+        ],
+        "totalAmount": 75.99,
+        "status": "paid"
+      },
+      {
+        "guestId": "611fe1e22ac1a80021b02d43",
+        "items": [
+          {
+            "name": "Mini Bar",
+            "description": "Assorted snacks and beverages",
+            "quantity": 1,
+            "price": 20.50
+          }
+        ],
+        "totalAmount": 20.50,
+        "status": "void"
+      }
+    ];
+    
+    module.exports = invoices;
+    
