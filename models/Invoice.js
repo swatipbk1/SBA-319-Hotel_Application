@@ -33,3 +33,12 @@ status: {
   enum: ['pending', 'paid', 'void'], // Assuming these are the possible statuses
   default: 'pending'
 },
+createdAt: {
+    type: Date,
+    default: Date.now
+  },
+  updatedAt: {
+    type: Date,
+    default: Date.now
+  }
+});
