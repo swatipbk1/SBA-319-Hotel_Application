@@ -20,3 +20,8 @@ URL: /invoices Instructions: Set the request method to GET. Use the URL http://l
 Update an Invoice by ID (PUT):
 
 URL: http://localhost:3000/serial/invoices/:id(object_id) Headers: Content-Type: application/json Request Body Example: { "guestId": "611fe1e22ac1a80021b02d49", "items": [ { "name": "Room Service Breakfast", "description": "Continental breakfast", "quantity": 1, "price": 15.99 }, { "name": "Laundry Service", "description": "Washing and ironing", "quantity": 2, "price": 10.50 } ], "totalAmount": 37.99, "status": "paid" // Updated status to "paid" } Instructions: Set the request method to PUT. Use the URL http://localhost:3000/serial/invoices/:id(object_id) Set the Content-Type header to application/json. Include the updated invoice details in the request body as shown in the example.
+Delete an Invoice by ID (DELETE):
+
+URL: /invoices/:id Instructions: Set the request method to DELETE. Use the URL http://localhost:3000/serial/invoices/:id(object_id) Use the URL /invoices/:id, replacing :id with the ID of the invoice you want to delete. No additional parameters or headers needed.
+
+Error Handling If an error occurs during the processing of a request, the API will return an appropriate error message along with the corresponding HTTP status code.
