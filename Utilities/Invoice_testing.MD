@@ -5,3 +5,10 @@ Getting Started To use the Invoice API, follow the instructions below:
 Installation Clone this repository to your local machine.
 
 Install dependencies using npm:
+npm install Start the server:
+
+npm start
+
+Endpoints The following endpoints are available in the API:
+
+Create an Invoice (POST):
