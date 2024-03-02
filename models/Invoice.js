@@ -6,3 +6,11 @@ const invoiceSchema = new mongoose.Schema({
     ref: 'Guest', // Assuming you have a Guest model
     required: true
   },
+  items: [{
+    name: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
