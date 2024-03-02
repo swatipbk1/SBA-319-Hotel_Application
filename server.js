@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const { db } = require('./db');
 require('dotenv').config();
 const personRoutes = require('./routes/personRoutes');
@@ -7,7 +8,7 @@ const invoiceRoutes = require('./routes/invoiceRoutes');
 
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 
 // Log incoming requests
 app.use((req, res, next) => {
