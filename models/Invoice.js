@@ -23,3 +23,13 @@ const invoiceSchema = new mongoose.Schema({
       type: Number,
       required: true
     }
+}],
+totalAmount: {
+  type: Number,
+  required: true
+},
+status: {
+  type: String,
+  enum: ['pending', 'paid', 'void'], // Assuming these are the possible statuses
+  default: 'pending'
+},
