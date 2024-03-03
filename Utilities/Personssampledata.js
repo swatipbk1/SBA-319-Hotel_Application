@@ -21,3 +21,24 @@ const persons = [
         "username": "jane_smith",
         "password": "password456"
     },
+    {
+        "name": "Michael Johnson",
+        "age": 35,
+        "work": "manager",
+        "mobile": "555-555-5555",
+        "email": "michael@example.com",
+        "address": "789 Elm St, Village",
+        "salary": 60000,
+        "username": "michael_johnson",
+        "password": "password789"
+    },
+    {
+        "name": "Emily Brown",
+        "age": 28,
+        "work": "chef",
+        "mobile": "222-333-4444",
+        "email": "emily@example.com",
+        "salary": 55000,
+        "username": "emily_brown",
+        "password": "passwordabc"
+    },
