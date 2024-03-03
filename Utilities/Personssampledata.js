@@ -42,4 +42,24 @@ const persons = [
         "username": "emily_brown",
         "password": "passwordabc"
     },
-    v
+    "name": "Emma Taylor",
+    "age": 22,
+    "work": "waiter",
+    "mobile": "666-777-8888",
+    "email": "emma@example.com",
+    "address": "987 Maple St, Borough",
+    "salary": 38000,
+    "username": "emma_taylor",
+    "password": "password123"
+},
+{
+    "name": "Daniel Anderson",
+    "age": 32,
+    "work": "manager",
+    "mobile": "444-444-4444",
+    "email": "daniel@example.com",
+    "address": "654 Birch St, Hamlet",
+    "salary": 65000,
+    "username": "daniel_anderson",
+    "password": "password456"
+},
