@@ -1,0 +1,1 @@
+Hotel Management System API - Person Management Welcome to the Hotel Management System API! This section of the API allows you to manage persons associated with the hotel, including staff members and guests. Below are instructions on how to interact with the API endpoints related to persons.
