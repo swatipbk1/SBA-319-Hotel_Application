@@ -27,3 +27,17 @@ const menuItems = [
         "ingredients": ["lettuce", "tomato", "cucumber", "bell pepper", "red onion", "olives", "dressing"],
         "is_drink": false
     },
+    {
+        "name": "Strawberry Smoothie",
+        "price": 5.49,
+        "taste": "sweet",
+        "ingredients": ["strawberries", "banana", "yogurt", "honey"],
+        "is_drink": true
+    },
+    {
+        "name": "Spicy Tofu Stir Fry",
+        "price": 9.99,
+        "taste": "spicy",
+        "ingredients": ["tofu", "bell peppers", "broccoli", "carrots", "chili sauce"],
+        "is_drink": false
+    },
