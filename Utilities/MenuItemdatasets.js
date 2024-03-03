@@ -20,3 +20,10 @@ const menuItems = [
         "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "fresh basil"],
         "is_drink": false
     },
+    {
+        "name": "Fresh Garden Salad",
+        "price": 6.99,
+        "taste": "sweet",
+        "ingredients": ["lettuce", "tomato", "cucumber", "bell pepper", "red onion", "olives", "dressing"],
+        "is_drink": false
+    },
