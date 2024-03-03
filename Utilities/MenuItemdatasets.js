@@ -41,3 +41,17 @@ const menuItems = [
         "ingredients": ["tofu", "bell peppers", "broccoli", "carrots", "chili sauce"],
         "is_drink": false
     },
+    {
+        "name": "Chocolate Brownie",
+        "price": 4.99,
+        "taste": "sweet",
+        "ingredients": ["flour", "cocoa powder", "butter", "sugar", "eggs", "chocolate chips"],
+        "is_drink": false
+    },
+    {
+        "name": "Green Tea",
+        "price": 2.49,
+        "taste": "refreshing",
+        "ingredients": ["green tea leaves", "hot water"],
+        "is_drink": true
+    },
