@@ -55,3 +55,20 @@ const menuItems = [
         "ingredients": ["green tea leaves", "hot water"],
         "is_drink": true
     },
+    {
+        "name": "Buffalo Wings",
+        "price": 11.49,
+        "taste": "spicy",
+        "ingredients": ["chicken wings", "buffalo sauce", "celery sticks", "blue cheese dressing"],
+        "is_drink": false
+    },
+    {
+        "name": "Fruit Salad",
+        "price": 7.99,
+        "taste": "sweet",
+        "ingredients": ["apple", "banana", "orange", "strawberries", "grapes", "honey"],
+        "is_drink": false
+    }
+];
+
+module.exports = menuItems;
