@@ -3,3 +3,6 @@
 Start the MongoDB shell by running the following command:
 
 Copy code mongo Switch to the desired database or create a new one using the use command. For example, to create a database named db, run:
+perl Copy code use db Define the JSON schema for the "employees" collection and create indexes. In the MongoDB shell, run:
+
+javascript Copy code db.createCollection("employees", { validator: { $jsonSchema: { bsonType: 'object', required: [ 'employee_id', 'Fname', 'Lname', 'age', 'salary', 'job_title', 'department_id' ], properties: { employee_id: { bsonType: 'int', description: 'must be an integer and is required' }, Fname: { bsonType: 'string', description: 'must be a string and is required' }, Lname: { bsonType: 'string', description: 'must be a string and is required' }, age: { bsonType: 'int', minimum: 18, description: 'must be an integer greater than or equal to 18 and is required' }, salary: { bsonType: 'double', minimum: 0, description: 'must be a double greater than or equal to 0 and is required' }, job_title: { bsonType: 'string', description: 'must be a string and is required' }, department_id: { bsonType: 'int', description: 'must be an integer and is required' } } } }, validationLevel: "strict", validationAction: "error" });
