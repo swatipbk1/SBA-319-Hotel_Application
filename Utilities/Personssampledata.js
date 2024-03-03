@@ -10,3 +10,14 @@ const persons = [
         "username": "john_doe",
         "password": "password123"
     },
+    {
+        "name": "Jane Smith",
+        "age": 25,
+        "work": "waiter",
+        "mobile": "987-654-3210",
+        "email": "jane@example.com",
+        "address": "456 Oak St, Town",
+        "salary": 40000,
+        "username": "jane_smith",
+        "password": "password456"
+    },
