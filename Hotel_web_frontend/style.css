@@ -52,3 +52,17 @@ nav { box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.tag {
+  background-color: #149f39;
+  padding: 5px 10px;
+  color: white;
+  align-self: flex-start;
+}
+
+.hero_content h1 {
+  font-size: 72px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.explore_btn {
