@@ -62,7 +62,8 @@ Set the request method and URL according to the desired endpoint.
 Include the necessary request body for POST and PUT requests.
 Send the request and inspect the response.
 
-Testing Details and Sample Data for API Routes
+# Testing Details and Sample Data for API Routes(Utilities Folder)
+
 In the Utilities folder, you will find detailed testing instructions for explicit routes within the hotel-application API. These instructions are split into three separate README files, each corresponding to a specific API route:
 
 Invoice_testing.MD: This document provides guidance on how to test the API routes related to invoice handling.
