@@ -83,4 +83,23 @@ nav { box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
     padding: 20px;
     transition: 0.2s ease-in-out;
   }
-  .feature img {
+  .feature img { width: 72px;
+  }
+  .feature:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+  }
+  .divider {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  /* Menu Section */
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+  }
