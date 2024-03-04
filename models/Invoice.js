@@ -23,17 +23,17 @@ const invoiceSchema = new mongoose.Schema({
       type: Number,
       required: true
     }
-}],
-totalAmount: {
-  type: Number,
-  required: true
-},
-status: {
-  type: String,
-  enum: ['pending', 'paid', 'void'], // Assuming these are the possible statuses
-  default: 'pending'
-},
-createdAt: {
+  }],
+  totalAmount: {
+    type: Number,
+    required: true
+  },
+  status: {
+    type: String,
+    enum: ['pending', 'paid', 'void'], // Assuming these are the possible statuses
+    default: 'pending'
+  },
+  createdAt: {
     type: Date,
     default: Date.now
   },
@@ -42,6 +42,7 @@ createdAt: {
     default: Date.now
   }
 });
+
 // Define indexes
 invoiceSchema.index({ guestId: 1 }); // Index for guestId field
 invoiceSchema.index({ status: 1 }); // Index for status field
