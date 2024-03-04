@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (exploreBtn) {
         exploreBtn.addEventListener('click', () => {
             // Make an AJAX request to fetch menu items from the server
-            fetch('../server.js/menu')
+            fetch('http://localhost:3000/menu/')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to fetch menu items');
