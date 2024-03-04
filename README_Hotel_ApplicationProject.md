@@ -66,10 +66,13 @@ Send the request and inspect the response.
 
 As an additional effort, a frontend has been developed for this project. Follow the steps below to access the web application:
 
-1. Open your web browser and navigate to the web hotel application website.
-2. On the homepage, you will see a button labeled "Explore Now".
-3. Click on the "Explore Now" button to navigate to the menu item route.
-4. The menu items available at the hotel will be displayed on the console of your web browser.
+1. Open your web browser and navigate to the web hotel application website through folder named "Hotel_web_frontend".
+2. Access the file named "index.html" within this folder.Once on the
+   homepage (index.html), locate and click on the "Explore Now" button.
+3. This action will direct you to the menu item route within the application.
+4. Subsequently, the menu items available at the hotel will be displayed within the console of your web browser.
+
+These steps provide a more detailed guide for accessing the frontend of the web hotel application, including navigating to the specific folder and file before exploring the application.
 
 Feel free to explore the menu items and enjoy your virtual hotel experience!
 
