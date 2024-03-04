@@ -38,4 +38,17 @@ nav { box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
     max-width: 1200px;
     margin: 0 auto;
   }
-  .bar_icon {
+  .bar_icon {  font-size: 32px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
