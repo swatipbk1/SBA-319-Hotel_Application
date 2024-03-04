@@ -132,4 +132,21 @@ nav { box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
     grid-area: I2;
   }
   .item3 {
-    grid-area: I3;
+    grid-area: I3;}
+    .item4 {
+      grid-area: I4;
+    }
+    .item5 {
+      grid-area: I5;
+    }
+    .item6 {
+      grid-area: I6;
+    }
+    .item7 {
+      grid-area: I7;
+    }
+    
+    /* Footer Section */
+    
+    footer {
+      background-color: #fff0db;
