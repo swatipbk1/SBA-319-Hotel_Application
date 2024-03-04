@@ -62,6 +62,25 @@ Set the request method and URL according to the desired endpoint.
 Include the necessary request body for POST and PUT requests.
 Send the request and inspect the response.
 
+Testing Details and Sample Data for API Routes
+In the Utilities folder, you will find detailed testing instructions for explicit routes within the hotel-application API. These instructions are split into three separate README files, each corresponding to a specific API route:
+
+Invoice_testing.MD: This document provides guidance on how to test the API routes related to invoice handling.
+
+Person_testingdetails.MD: Here, you'll find instructions for testing the API routes concerning person-related functionalities.
+
+MenuItem_testing.MD: This README contains testing details for the API routes associated with menu items.
+
+Additionally, sample datasets are provided to facilitate testing and populating the MongoDB database. You can find these datasets in separate files:
+
+Invoicetestdataset.js: Sample data specifically tailored for testing invoice-related API routes.
+
+MenuItemdatasets.js: Contains sample data to be used for testing menu item API routes.
+
+Personssampledata.js: Sample dataset designed for testing person-related API routes.
+
+These datasets can be utilized in conjunction with the testing instructions to ensure the proper functioning of the API routes and the integrity of the data stored in the MongoDB database.
+
 ## Frontend
 
 As an additional effort, a frontend has been developed for this project. Follow the steps below to access the web application:
