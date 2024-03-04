@@ -21,4 +21,12 @@ button:hover {
 }
 /* Navigation */
 
-nav {
+nav { box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background: white;
+    padding: 10px;
+    z-index: 50;
+  }
+  .navigation {
